@@ -95,11 +95,12 @@ GameObject:
   - component: {fileID: 3094105610636352371}
   - component: {fileID: 6644752950252173313}
   - component: {fileID: 983647543485423857}
-  - component: {fileID: 2493331037171594862}
   - component: {fileID: 7070863754729177500}
   - component: {fileID: 6915476622623705271}
   - component: {fileID: 3855151942256216393}
-  - component: {fileID: 4330120840508226737}
+  - component: {fileID: 2493331037171594862}
+  - component: {fileID: 8107083976931388289}
+  - component: {fileID: 7204549049769420963}
   m_Layer: 2
   m_Name: Cube base
   m_TagString: Untagged
@@ -151,19 +152,7 @@ MonoBehaviour:
   _cube: {fileID: 6644752950252173313}
   _collisionLayerAfterFall: 0
   _collision: {fileID: 3855151942256216393}
---- !u!114 &2493331037171594862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7851484652321225103}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _containerSource: 2
+  _fallSpeed: 4
 --- !u!114 &7070863754729177500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -238,7 +227,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.15, y: 1.15}
   m_EdgeRadius: 0
---- !u!50 &4330120840508226737
+--- !u!114 &2493331037171594862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851484652321225103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 717a02054ef2699498e6bd4234fd7995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _containerSource: 2
+--- !u!114 &8107083976931388289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7851484652321225103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8734ad1de798f0b49b7f4b2f651e032c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: "Rigidbody \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C \u0442\u043E\u043B\u044C\u043A\u043E
+    \u0434\u043B\u044F \u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0430\u0446\u0438\u0438
+    \u0432\u0445\u043E\u0434\u0430 \u0432 \u0442\u0440\u0438\u0433\u0435\u0440. \u041D\u0435
+    \u0434\u043B\u044F \u0447\u0435\u0433\u043E \u0431\u043E\u043B\u044C\u0448\u0435
+    \u043E\u043D \u043D\u0435 \u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u0442\u0441\u044F."
+--- !u!50 &7204549049769420963
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0

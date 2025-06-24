@@ -1308,7 +1308,6 @@ GameObject:
   - component: {fileID: 1327270611}
   - component: {fileID: 1327270613}
   - component: {fileID: 1327270614}
-  - component: {fileID: 1327270615}
   m_Layer: 0
   m_Name: hole zone
   m_TagString: Untagged
@@ -1389,33 +1388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _cubeHoleDisposeAnimation: {fileID: 7929638738574397488, guid: 4ae8abbe74a539947be679746ac22df2, type: 3}
---- !u!50 &1327270615
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1327270610}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  _holePosition: {fileID: 1597939418}
 --- !u!1 &1518930013
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,4 @@
-using System;
+using DG.Tweening;
 using UnityEngine;
 
 namespace Game
@@ -11,7 +11,14 @@ namespace Game
         
         public void Destroy()
         {
-            Destroy(gameObject);
+            Sequence destroySequence = DOTween.Sequence();
+            
+            destroySequence
+                .Append(transform.DOScale(1.2f, 0.15f).SetEase(Ease.OutBack))
+                .Append(transform.DORotate(new Vector3(0, 0, 10), 0.1f).SetEase(Ease.InOutSine))
+                .Append(transform.DORotate(new Vector3(0, 0, -10), 0.2f).SetLoops(2, LoopType.Yoyo))
+                .Append(transform.DOScale(0f, 0.2f).SetEase(Ease.InBack))
+                .OnComplete(() => Destroy(gameObject));
         }
 
 #if UNITY_EDITOR
