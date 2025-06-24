@@ -1,5 +1,4 @@
 using System;
-using UnityEditor;
 using UnityEngine;
 
 namespace Game
@@ -10,6 +9,11 @@ namespace Game
 
         public Sprite Sprite => _spriteRenderer.sprite;
         
+        public void Destroy()
+        {
+            Destroy(gameObject);
+        }
+
 #if UNITY_EDITOR
         private void OnValidate()
         {
