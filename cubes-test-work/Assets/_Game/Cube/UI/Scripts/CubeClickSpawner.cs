@@ -10,8 +10,8 @@ namespace Game
     public class CubeClickSpawner : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         [SerializeField] private CubeVisualisation _selfCube;
-        [SerializeField] private float _holdTimeToSpawn = 0.15f;
-        [SerializeField] private float _maxAcceptablePointerOffset;
+        [SerializeField] private float _holdTimeToSpawn = 0.05f;
+        [SerializeField] private Vector2 _maxAcceptablePointerOffset = new(0.15f,100f);
         [SerializeField] private InputActionReference _pointerMovement;
 
         [Inject] private CubeDragZone _cubeDragZone;
@@ -38,7 +38,7 @@ namespace Game
                 
                 await UniTask.NextFrame();
 
-                if (_isPressing == false || _pointerOffset.magnitude >= _maxAcceptablePointerOffset)
+                if (_isPressing == false || _pointerOffset.x >= _maxAcceptablePointerOffset.x || _pointerOffset.y >= _maxAcceptablePointerOffset.y)
                 {
                     return;
                 }
