@@ -13,14 +13,17 @@ namespace Game
         
         public delegate void JsonSerializationStartedDelegate(SaveFile data);
         public delegate void LoadDataStartedDelegate(SaveFile data);
+
+        public delegate void DestroyedDelegate(Cube cube);
         public event JsonSerializationStartedDelegate JsonSerializationStarted;
         public event LoadDataStartedDelegate LoadDataStarted;
-        
+        public static event DestroyedDelegate Destroyed;
         
         public void Destroy()
         {
             Sequence destroySequence = DOTween.Sequence();
             
+            Destroyed?.Invoke(this);
             destroySequence
                 .Append(transform.DOScale(1.2f, 0.15f).SetEase(Ease.OutBack))
                 .Append(transform.DORotate(new Vector3(0, 0, 10), 0.1f).SetEase(Ease.InOutSine))

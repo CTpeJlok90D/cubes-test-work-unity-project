@@ -36,17 +36,6 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "717ef714-3b44-4d76-a838-c93841f4ca6b",
-                    "path": "<Pointer>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Pointer position",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "2475aea1-f46b-4400-a2ef-61c60d1ae460",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -59,7 +48,7 @@
                 {
                     "name": "",
                     "id": "9f2b3620-5cfc-4d1c-bdb2-bbce916ffadd",
-                    "path": "<Touchscreen>/primaryTouch/indirectTouch",
+                    "path": "<Touchscreen>/Press",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -69,8 +58,41 @@
                 },
                 {
                     "name": "",
-                    "id": "fdff67fd-5948-42db-b902-017cda1346f5",
-                    "path": "<Pointer>/delta",
+                    "id": "c766171d-6b8a-4dd7-af4d-7e642f9f1d57",
+                    "path": "<Mouse>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e90ae95a-5166-4b5f-afb8-07c388703089",
+                    "path": "<Touchscreen>/primaryTouch/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0309a9ad-dcbc-4965-9996-3e55fd40f7c9",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "57c72526-7d78-4ea7-a9a4-f8ff935ff0c9",
+                    "path": "<Touchscreen>/primaryTouch/delta",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
