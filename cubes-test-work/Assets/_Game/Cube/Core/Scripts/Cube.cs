@@ -6,8 +6,16 @@ namespace Game
     public class Cube : MonoBehaviour
     {
         [SerializeField] private SpriteRenderer _spriteRenderer;
+        [SerializeField] private string _id;
 
         public Sprite Sprite => _spriteRenderer.sprite;
+        public string ID => _id;
+        
+        public delegate void JsonSerializationStartedDelegate(SaveFile data);
+        public delegate void LoadDataStartedDelegate(SaveFile data);
+        public event JsonSerializationStartedDelegate JsonSerializationStarted;
+        public event LoadDataStartedDelegate LoadDataStarted;
+        
         
         public void Destroy()
         {
@@ -21,9 +29,34 @@ namespace Game
                 .OnComplete(() => Destroy(gameObject));
         }
 
+        public CubeData ToCubeData()
+        {
+            SaveFile data = new();
+            JsonSerializationStarted?.Invoke(data);
+
+            CubeData cubeData = new()
+            {
+                ID = _id,
+                Data = data
+            };
+            return cubeData;
+        }
+
+        public Cube LoadData(CubeData data)
+        {
+            LoadDataStarted?.Invoke(data.Data);
+            return this;
+        }
+
 #if UNITY_EDITOR
         private void OnValidate()
         {
+            if (Application.IsPlaying(this))
+            {
+                return;
+            }
+            
+            _id = name;
             if (_spriteRenderer == null)
             {
                 _spriteRenderer = GetComponentInChildren<SpriteRenderer>();

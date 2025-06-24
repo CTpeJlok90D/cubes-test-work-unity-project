@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Main game configuration
   m_EditorClassIdentifier: 
   _cubesConfigurationSo: {fileID: 11400000, guid: f9bf79438f7aef44bb0f0bd0064eeba5, type: 2}
+  _cubeById: {fileID: 11400000, guid: 5066c378bf5e27249af32fedc75c85c1, type: 2}

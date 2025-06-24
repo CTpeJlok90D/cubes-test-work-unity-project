@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 244165cdf38bc924a882b1bfabd40645
+labels:
+- Cube
 PrefabImporter:
   externalObjects: {}
   userData: 

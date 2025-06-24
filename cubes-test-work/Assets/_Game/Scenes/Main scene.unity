@@ -915,6 +915,7 @@ GameObject:
   - component: {fileID: 862271259}
   - component: {fileID: 862271261}
   - component: {fileID: 862271262}
+  - component: {fileID: 862271263}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Untagged
@@ -995,6 +996,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _boxCollider: {fileID: 862271261}
+--- !u!114 &862271263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862271258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24fc3867c8af96041abebb58833e988d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _snapPlatform: {fileID: 862271262}
+  _saveID: Tower data
 --- !u!1 &958569667
 GameObject:
   m_ObjectHideFlags: 0
