@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: Main Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: Main
+  m_TableCollectionNameGuidString: 373c778807e188b4db4586d83df1d116
+  m_Entries:
+  - m_Id: 5260050432
+    m_Key: Cube placed
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6992297984
+    m_Key: Cube taken
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9424994304
+    m_Key: Cube destroyed
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 2466701018926415896
+  references:
+    version: 2
+    RefIds:
+    - rid: 2466701018926415896
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1750778561729

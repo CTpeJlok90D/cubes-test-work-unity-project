@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 030c5b504cb499a4c94dd64e98d17060, type: 3}
+  m_Name: Cubes by ids
+  m_EditorClassIdentifier: 
+  _values:
+    _serializedList:
+    - Key: Cube blue dark
+      Value: {fileID: 5665553916302364111, guid: c4d0930509998df41b6828d71e228b02, type: 3}
+    - Key: Cube blue
+      Value: {fileID: 5665553916302364111, guid: 0af8e839d75404443b708a96f7ab6a65, type: 3}
+    - Key: Cube brown
+      Value: {fileID: 5665553916302364111, guid: 866abca00eb54c54c95905799c94fba4, type: 3}
+    - Key: Cube gray dark
+      Value: {fileID: 5665553916302364111, guid: f150010a01d6d61468ec591ac0aac7ca, type: 3}
+    - Key: Cube gray
+      Value: {fileID: 5665553916302364111, guid: 4899ac95cf0354346a242a993c297b06, type: 3}
+    - Key: Cube green
+      Value: {fileID: 5665553916302364111, guid: fd790c6c85b5e7b4b8abbfbb22f27442, type: 3}
+    - Key: Cube light blue
+      Value: {fileID: 5665553916302364111, guid: 8aa7406032a2c1e4ebe34e8682021400, type: 3}
+    - Key: Cube orange
+      Value: {fileID: 5665553916302364111, guid: e8517f3ad8e32bb4597aa721cfeb2a31, type: 3}
+    - Key: Cube pink dark
+      Value: {fileID: 5665553916302364111, guid: 7ba4cc564fe23e94399fd7d23ad16c8d, type: 3}
+    - Key: Cube pink light
+      Value: {fileID: 5665553916302364111, guid: 216e60bb77307ef4eb9616ef913967da, type: 3}
+    - Key: Cube pink
+      Value: {fileID: 5665553916302364111, guid: d70950f8c051d7f4d8fae39fb61d9729, type: 3}
+    - Key: Cube red dark
+      Value: {fileID: 5665553916302364111, guid: 37d5e80880069f44d896ddda64e17b24, type: 3}
+    - Key: Cube red light
+      Value: {fileID: 5665553916302364111, guid: a43236dc82f801042982ce1d42f31071, type: 3}
+    - Key: Cube red
+      Value: {fileID: 5665553916302364111, guid: 5bb5836a359c6584990435221de6d3c8, type: 3}
+    - Key: Cube yellow green
+      Value: {fileID: 5665553916302364111, guid: 244165cdf38bc924a882b1bfabd40645, type: 3}
+    - Key: Cube yellow light
+      Value: {fileID: 5665553916302364111, guid: bf9090c42d7eb774b8f24d41b22221b7, type: 3}
+    - Key: Cube yellow
+      Value: {fileID: 5665553916302364111, guid: c29736c8a19b69c40887e3c8dc724dc6, type: 3}
+  _errorValue: {fileID: 0}
