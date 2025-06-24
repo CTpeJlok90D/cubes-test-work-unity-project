@@ -1,0 +1,85 @@
+{
+    "name": "Main input map",
+    "maps": [
+        {
+            "name": "Main input map",
+            "id": "2b9ff77a-d310-40b2-9036-7e7e29bacb72",
+            "actions": [
+                {
+                    "name": "Pointer position",
+                    "type": "Value",
+                    "id": "d55c8233-af2c-44ad-ab84-84e573ff8dcf",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Pointer events",
+                    "type": "Button",
+                    "id": "a05c53e0-4553-4bb8-b701-cce6a07bedcb",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Pointer movement",
+                    "type": "Value",
+                    "id": "02a32767-eace-4b1e-aa4c-9204a2fee4a9",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "717ef714-3b44-4d76-a838-c93841f4ca6b",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2475aea1-f46b-4400-a2ef-61c60d1ae460",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer events",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9f2b3620-5cfc-4d1c-bdb2-bbce916ffadd",
+                    "path": "<Touchscreen>/primaryTouch/indirectTouch",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer events",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fdff67fd-5948-42db-b902-017cda1346f5",
+                    "path": "<Pointer>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pointer movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
